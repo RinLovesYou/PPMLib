@@ -1,0 +1,12 @@
+/home/rin/Documents/PPMLib/bin/Debug/net5.0/PPMLib.deps.json
+/home/rin/Documents/PPMLib/bin/Debug/net5.0/PPMLib.dll
+/home/rin/Documents/PPMLib/bin/Debug/net5.0/ref/PPMLib.dll
+/home/rin/Documents/PPMLib/bin/Debug/net5.0/PPMLib.pdb
+/home/rin/Documents/PPMLib/obj/Debug/net5.0/PPMLib.csprojAssemblyReference.cache
+/home/rin/Documents/PPMLib/obj/Debug/net5.0/PPMLib.GeneratedMSBuildEditorConfig.editorconfig
+/home/rin/Documents/PPMLib/obj/Debug/net5.0/PPMLib.AssemblyInfoInputs.cache
+/home/rin/Documents/PPMLib/obj/Debug/net5.0/PPMLib.AssemblyInfo.cs
+/home/rin/Documents/PPMLib/obj/Debug/net5.0/PPMLib.csproj.CoreCompileInputs.cache
+/home/rin/Documents/PPMLib/obj/Debug/net5.0/PPMLib.dll
+/home/rin/Documents/PPMLib/obj/Debug/net5.0/ref/PPMLib.dll
+/home/rin/Documents/PPMLib/obj/Debug/net5.0/PPMLib.pdb

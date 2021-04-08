@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "VYroSuO+0XKfNM5b96M7+pFuWQh4OUYKdYXIXZxPvqMAK8qbIKMyMkr7BWASedy/pV6tm5x2UzDlN7zd7+UlMQ==",
+  "dgSpecHash": "rGNYXDHl8thzvozNqqQwPRXhBJFBTZ+3QnvOC2ZDIqQGWPtnoCJl3aJUS+mStgV/shu243yoj54t7/j62FOZmw==",
   "success": true,
   "projectFilePath": "/home/rin/Documents/PPMLib/PPMLib.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "/home/rin/.nuget/packages/sixlabors.imagesharp/1.0.3/sixlabors.imagesharp.1.0.3.nupkg.sha512"
+  ],
   "logs": []
 }
