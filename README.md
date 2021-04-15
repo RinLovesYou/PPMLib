@@ -1,4 +1,5 @@
 # PPMLib
+[![build](https://github.com/RinLovesYou/PPMLib/actions/workflows/dotnet.yml/badge.svg)](https://github.com/RinLovesYou/PPMLib/actions/workflows/dotnet.yml)
 
 Cross-Platform rewrite of [PPMLib](https://github.com/miso-xyz/PPMLib)
 I'm publishing this here because i'm too stupid to use Linux
