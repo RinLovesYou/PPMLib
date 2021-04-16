@@ -6,6 +6,8 @@ I'm publishing this here because i'm too stupid to use Linux
 
 Documentation: Coming Soon™
 
+This version is not stable! Not everything may work as intended. Known issues are frame rendering.
+
 Please report any issues you find in the Issues Section of the github.
 
 # Building
