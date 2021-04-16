@@ -13,7 +13,7 @@ Please report any issues you find in the Issues Section of the github.
 # Building
 * Clone the project
 * run `dotnet restore`
-* run `dotnet build --configuration Release
+* run `dotnet build --configuration Release`
 
 # Credits
 This project would not have seen the light of day without the help of the following people, please support them!
