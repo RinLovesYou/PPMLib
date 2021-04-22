@@ -4,7 +4,7 @@
 Cross-Platform rewrite of [PPMLib](https://github.com/miso-xyz/PPMLib)
 I'm publishing this here because i'm too stupid to use Linux
 
-Documentation: Coming Soon™
+Documentation: [Under Construction™](https://github.com/RinLovesYou/PPMLib/wiki)
 
 This version is not stable! Not everything may work as intended. Known issues are frame rendering.
 
