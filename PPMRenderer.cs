@@ -101,7 +101,7 @@ namespace PPMLib
                         }
                         else
                         {
-                            bmp[x, y] = frame.PaperColor == PaperColor.White ? Color.Black : Color.White;
+                            bmp[x, y] = frame.PaperColor == PaperColor.Black ? Color.Black : Color.White;
                         }
                     }
                     else
@@ -114,7 +114,7 @@ namespace PPMLib
                             }
                             else
                             {
-                                bmp[x, y] = frame.PaperColor == PaperColor.White ? Color.Black : Color.White;
+                                bmp[x, y] = frame.PaperColor == PaperColor.Black ? Color.Black : Color.White;
                             }
                         }
                         else
