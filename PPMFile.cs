@@ -361,7 +361,7 @@ namespace PPMLib
                 .Replace("-----END RSA PRIVATE KEY-----", "")
                 .Replace(System.Environment.NewLine, "");
             var rsa = CreateRsaProviderFromPrivateKey(privkey);
-            var hash = new SHA1CryptoServiceProvider().ComputeHash(data);
+            var hash = SHA1.Create().ComputeHash(data);
             return rsa.SignHash(hash, CryptoConfig.MapNameToOID("SHA1"));
         }
 

@@ -1,10 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "7QNiZdq3Cfr51ML7tO2akesyfTVTlC5ZeGzAt/Wd0gGdQm6EB8vUdKHKvrX9GqUfG6a67G++1gF8Ddv/So4xYg==",
+  "dgSpecHash": "nzU7MuN6oF3F4uP+1DgvGU/ZsMkQ75hGCD0KBL5g4BM4kD6611+yFjpOXrYHB+UzcA/HJnlOt7TCxNoQGnI6iQ==",
   "success": true,
-  "projectFilePath": "/home/rin/Documents/PPMLib/PPMLib.csproj",
+  "projectFilePath": "/home/sarah/RiderProjects/PPMLib/PPMLib.csproj",
   "expectedPackageFiles": [
-    "/home/rin/.nuget/packages/sixlabors.imagesharp/1.0.3/sixlabors.imagesharp.1.0.3.nupkg.sha512"
+    "/home/sarah/.nuget/packages/sixlabors.imagesharp/1.0.3/sixlabors.imagesharp.1.0.3.nupkg.sha512",
+    "/home/sarah/.nuget/packages/microsoft.netcore.app.ref/8.0.0/microsoft.netcore.app.ref.8.0.0.nupkg.sha512",
+    "/home/sarah/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.0/microsoft.aspnetcore.app.ref.8.0.0.nupkg.sha512"
   ],
   "logs": []
 }
