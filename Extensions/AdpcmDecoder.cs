@@ -271,7 +271,7 @@ namespace PPMLib.Extensions
             var srcLength = src.Length;
             var srcDuration = srcLength / srcFreq;
             var dstLength = srcDuration * dstFreq;
-            var dst = new short[(int)dstLength];
+            var dst = new short[(int)dstLength+1];
             var adjFreq = srcFreq / dstFreq;
             for (var dstPtr = 0; dstPtr < dstLength; dstPtr++)
             {

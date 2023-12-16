@@ -2,6 +2,7 @@
 using PPMLib.Extensions;
 using System;
 using System.IO;
+using NAudio.Wave;
 
 namespace PPMLib
 {
@@ -48,8 +49,12 @@ namespace PPMLib
                     }
                     
                 }
-                var a = new WavePcmFormat(output, 1, (uint)(sampleRate / 2), 16);
-                return a.ToBytesArray();
+                var decodedDataStream = new MemoryStream(output);
+                var s = new RawSourceWaveStream(decodedDataStream, new WaveFormat(sampleRate / 2, 16, 1));
+                var outputDataStream = new MemoryStream();
+                WaveFileWriter.WriteWavFileToStream(outputDataStream, s);
+                
+                return outputDataStream.ToArray();
             }
             return null;
         }

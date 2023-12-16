@@ -34,7 +34,7 @@ namespace PPMLib.Extensions
                 var mb = rgx.Matches(b);
                 for (int i = 0; i < ma.Count; ++i)
                 {
-                    int ret = ma[i].Groups[1].Value.CompareTo(mb[i].Groups[1].Value);
+                    int ret = string.Compare(ma[i].Groups[1].Value, mb[i].Groups[1].Value, StringComparison.Ordinal);
                     if (ret != 0)
                         return ret;
 

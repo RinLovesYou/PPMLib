@@ -85,43 +85,45 @@ namespace PPMLib
         {
             var bmp = new Image<Rgba32>(256, 192);
 
-            var rect = new Rectangle(0, 0, 256, 192);
-
-            byte[] bytes = new byte[(256 * 192) + 1];
-
-            for (var y = 0; y <= 192; y++)
+            for (var y = 0; y < 192; y++)
             {
-                for (var x = 0; x <= 256; x++)
+                for (var x = 0; x < 256; x++)
                 {
-                    if (frame.Layer1[y, x])
+                    bmp[x, y] = frame.PaperColor.ToColor();
+
+                    if (frame.Layer1[x, y])
                     {
-                        if (frame.Layer1.PenColor != PenColor.Inverted)
-                        {
-                            bmp[x, y] = frame.Layer1.PenColor == PenColor.Red ? Color.Red : Color.Blue;
-                        }
-                        else
-                        {
-                            bmp[x, y] = frame.PaperColor == PaperColor.Black ? Color.Black : Color.White;
-                        }
+                        bmp[x, y] = frame.Layer1.PenColor == PenColor.Inverted ? frame.PaperColor.ToInvertedColor() : frame.Layer1.PenColor.ToColor();
+                        
                     }
-                    else
-                    {
-                        if (frame.Layer2[y, x])
-                        {
-                            if (frame.Layer2.PenColor != PenColor.Inverted)
-                            {
-                                bmp[x, y] = frame.Layer2.PenColor == PenColor.Red ? Color.Red : Color.Blue;       
-                            }
-                            else
-                            {
-                                bmp[x, y] = frame.PaperColor == PaperColor.Black ? Color.Black : Color.White;
-                            }
-                        }
-                        else
-                        {
-                            bmp[x, y] = frame.PaperColor == PaperColor.White ? Color.White : Color.Black;
-                        }
-                    }
+
+                    if (frame.Layer2[x, y])
+                        bmp[x, y] = frame.Layer2.PenColor == PenColor.Inverted ? frame.PaperColor.ToInvertedColor() : frame.Layer2.PenColor.ToColor();
+                    
+                    
+
+                    // if (frame.Layer1[x, y])
+                    // {
+                    //     if (frame.Layer1.PenColor != PenColor.Inverted)
+                    //     {
+                    //         bmp[x, y] = frame.Layer1.PenColor == PenColor.Red ? Color.Red : Color.Blue;
+                    //     }
+                    //     else
+                    //     {
+                    //         bmp[x, y] = frame.PaperColor == PaperColor.Black ? Color.Black : Color.White;
+                    //     }
+                    // }
+                    // else if (frame.Layer2[x, y])
+                    // {
+                    //     if (frame.Layer2.PenColor != PenColor.Inverted)
+                    //     {
+                    //         bmp[x, y] = frame.Layer2.PenColor == PenColor.Red ? Color.Red : Color.Blue;       
+                    //     }
+                    //     else
+                    //     {
+                    //         bmp[x, y] = frame.PaperColor == PaperColor.Black ? Color.Black : Color.White;
+                    //     }
+                    // }
                 }
             }
             return bmp;
